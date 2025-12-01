@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Santa's Tile Calculator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>Santa's Tiling Trouble</h1>
+  <div class="input-row">
+    <div class="input-column">
+      <label for="length">Length (m):</label>
+      <input id="length" type="number" />
+    </div>
+    <div class="input-column">
+      <label for="width">Width (m):</label>
+      <input id="width" type="number" />
+    </div>
+    <div class="input-column">
+      <label for="price">Price per 1 m²:</label>
+      <input id="price" type="number" />
+    </div>
+  </div>
+  <button onclick="calculate()">Calculate</button>
+  <h2 id="result"></h2>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
