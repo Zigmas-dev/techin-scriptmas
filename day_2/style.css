@@ -29,6 +29,7 @@ label {
   color: #555;
 }
 
+
 input {
   width: 100%;
   max-width: 100px; 
@@ -50,14 +51,15 @@ input:focus {
 .input-row {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   margin-bottom: 10px;
 }
 
 .input-column {
   display: flex;
-  flex-direction: column; 
-  align-items: flex-start;
-  flex: 1; 
+  flex-direction: column;
+  align-items: center; /* centras */
+  flex: 1;
 }
 
 button {
