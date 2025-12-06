@@ -1,0 +1,15 @@
+Santa’s Sleigh Flight Schedule
+
+Santa’s magical sleigh takes off from the North Pole at a hours and b minutes. The sleigh stays in the air for c minutes delivering presents.
+
+Write a program that calculates:
+
+v — the hour when Santa lands
+m — the minute when Santa lands
+Keep in mind that c can be large, meaning Santa might land after midnight, on the next day!
+
+Example: If Santa takes off at a = 23, b = 55, and the flight lasts c = 14 minutes, then Santa will land at:
+
+v = 0 hours
+m = 9 minutes
+Help Santa keep his schedule on time—Christmas depends on it!

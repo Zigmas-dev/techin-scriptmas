@@ -1,0 +1,18 @@
+Gift Bag
+Santa Claus is preparing his gift bag and checking the prices of different toys. The toy prices (real numbers) are entered from the keyboard. When 0 is entered, it means the magical toy list is finished.
+
+Write a program that:
+
+Calculates the total price of all toys that cost more than 10 EUR (because the more expensive toys are usually extra magical!).
+Determines and outputs how many such special toys Santa has added to his bag.
+
+Example (Santa’s list):
+
+Input:
+
+5.6; 6.7; 12.3; 15.7; 0
+
+Output should be:
+
+Total price of magical toys: 28.0 EUR
+Number of magical toys: 2
