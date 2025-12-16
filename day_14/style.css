@@ -1,0 +1,130 @@
+body {
+  background: #e8f3ff;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 15px;
+  background: linear-gradient(145deg, #fffcf5, #ffe6e6);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h1 {
+  color: #d6336c;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #d6336c;
+}
+
+.add-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.promo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.promo-row label,
+.promo-row input,
+.promo-row button {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.promo-row input {
+  padding: 0 8px;
+}
+
+.promo-row button {
+  padding: 0 15px;
+}
+
+#cartList {
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.empty-cart-btn {
+  padding: 5px 10px;
+  font-size: 0.95rem;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.empty-cart-btn:hover {
+  background-color: #d6336c;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.gift-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.summary-column {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+}

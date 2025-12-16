@@ -1,0 +1,50 @@
+Santa’s Gift Cart Engine
+Story
+
+Santa is testing a brand-new digital gift cart system for his workshop! Before Christmas Eve, he needs your help to make sure the cart correctly tracks gifts, prevents duplicates, and applies magical promo codes.
+
+Each gift has:
+
+A unique gift ID
+A price in candy canes
+Task
+
+Implement a Santa’s Gift Cart Engine with the following methods:
+
+cart.add(id, price)        // Add a gift to the cart
+cart.remove(id)           // Remove a gift from the cart
+cart.total()              // Return total price of all gifts
+cart.applyDiscount("PROMO10")  // Apply a magical promo code
+Rules from Santa’s Workshop
+
+Promo codes are stored in an object:
+
+{
+  PROMO10: 0.10,
+  PROMO25: 0.25,
+  SANTA50: 0.50
+}
+🎁 Each gift ID must be unique — no duplicate presents in Santa’s sack!
+
+📦 total() must always return the correct final amount, including discounts
+
+🧾 Removing a gift immediately updates the total
+
+❌ Invalid promo codes should be ignored safely
+
+💾 The cart must persist its internal state correctly
+
+Example
+
+cart.add("train", 30)
+cart.add("doll", 20)
+cart.applyDiscount("PROMO10")
+cart.total()    // 45
+cart.remove("train")
+cart.total()    // 18
+Bonus Challenges (Extra Elf Points)
+
+Prevent negative prices
+Allow only one promo code at a time
+Add cart.clear() method for Santa’s reset button
+Return full cart content with cart.list()
