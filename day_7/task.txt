@@ -1,0 +1,10 @@
+Santa’s Christmas Concert Seating Plan
+Santa is organizing a big Christmas concert, and the architect has designed a hall with n rows of seats.
+
+In the first row, there will be k seats.
+Every next row will have 2 more seats than the row before it (because more elves want a good view!).
+Write a program that calculates s, the total number of seats Santa must order to match the architect’s seating plan.
+
+Example: If n = 3 rows and the first row has k = 8 seats, then the total number of seats should be: s = 30 seats
+
+Help Santa make sure every elf gets a spot at the show!

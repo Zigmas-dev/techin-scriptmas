@@ -1,0 +1,39 @@
+🎄 Christmas Lights Pattern Generator
+
+Story
+
+Santa is testing a new programmable Christmas lights system. Each house on the street displays a pattern of lights based on a numeric rule N.
+
+Task Description
+
+Write a program that generates an N × N Christmas Lights Grid.
+
+Rules
+
+For each cell at position (row, col):
+
+If (row + col) is divisible by 3, print T
+If divisible by 5, print S
+If divisible by both 3 and 5, print G
+Otherwise, print .
+Add a border of # around the grid.
+Row and column numbers start from 1.
+
+Input:
+
+N
+Example:
+
+6
+Output for N = 6
+
+
+###############
+# . T . . S T #
+# T . . S T . #
+# . . S T . . #
+# . S T . . T #
+# S T . . T S #
+# T . . T S . #
+###############
+(Spaces are for readability.)

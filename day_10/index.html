@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santa’s Spinning Clock Mystery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎄 Santa's Spinning Clock 🎄</h1>
+
+    <label>
+      Hours (h)
+      <input type="number" id="hoursInput" min="0" max="23" value="12">
+    </label>
+
+    <label>
+      Minutes (m)
+      <input type="number" id="minutesInput" min="0" max="59" value="0">
+    </label>
+
+    <button id="spinButton">Spin Minute Hand</button>
+
+    <div class="clock">
+      <div id="hourHand" class="hand hour"></div>
+      <div id="minuteHand" class="hand minute"></div>
+      <div id="center"></div>
+
+      <!-- Clock numbers -->
+      <div class="clock-number" id="num1">1</div>
+      <div class="clock-number" id="num2">2</div>
+      <div class="clock-number" id="num3">3</div>
+      <div class="clock-number" id="num4">4</div>
+      <div class="clock-number" id="num5">5</div>
+      <div class="clock-number" id="num6">6</div>
+      <div class="clock-number" id="num7">7</div>
+      <div class="clock-number" id="num8">8</div>
+      <div class="clock-number" id="num9">9</div>
+      <div class="clock-number" id="num10">10</div>
+      <div class="clock-number" id="num11">11</div>
+      <div class="clock-number" id="num12">12</div>
+    </div>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

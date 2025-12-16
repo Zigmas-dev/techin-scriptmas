@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santa’s Magical Archery Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Santa's Magical Archery 🎯</h1>
+
+    <label>
+      Target center X:
+      <input type="number" id="centerX" placeholder="e.g. 0-150">
+    </label>
+
+    <label>
+      Target center Y:
+      <input type="number" id="centerY" placeholder="e.g. 0-150">
+    </label>
+
+    <label>
+      Arrow X:
+      <input type="number" id="arrowX" placeholder="e.g. 0-160">
+    </label>
+
+    <label>
+      Arrow Y:
+      <input type="number" id="arrowY" placeholder="e.g. 0-160">
+    </label>
+
+    <button id="calculate">Calculate Score</button>
+
+    <p id="result"></p>
+
+    <svg id="target" width="300" height="300">
+      <!-- Rings (outer to inner) -->
+      <circle cx="150" cy="150" r="120" fill="none" stroke="red" stroke-width="4"/>
+      <circle cx="150" cy="150" r="90" fill="none" stroke="green" stroke-width="4"/>
+      <circle cx="150" cy="150" r="60" fill="none" stroke="blue" stroke-width="4"/>
+      <circle cx="150" cy="150" r="20" fill="black"/> <!-- center -->
+      <!-- Arrow -->
+      <circle id="arrow" cx="0" cy="0" r="5" fill="gold"/>
+    </svg>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
