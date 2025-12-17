@@ -1,40 +1,45 @@
-// Event listener for the "Generate" button
 document.getElementById("generate").addEventListener("click", () => {
   const n = Number(document.getElementById("gridSize").value);
+  const result = document.getElementById("result");
 
-  // Validate input
   if (n <= 0) {
-    document.getElementById("result").textContent = "Please enter a valid number";
+    result.innerHTML = "Please enter a valid number";
     return;
   }
 
-  let pattern = "";
+  let html = "";
 
   // Top border
-  pattern += "#".repeat(n * 2 + 3) + "\n";
+  html += "<span class='border'>" + "#".repeat(n * 2 + 3) + "</span>\n";
 
   // Grid rows
   for (let row = 1; row <= n; row++) {
-    pattern += "# "; // left border
+    html += "<span class='border'>#</span> ";
 
     for (let col = 1; col <= n; col++) {
-      if ((row + col) % 15 === 0) {
-        pattern += "G ";
-      } else if ((row + col) % 3 === 0) {
-        pattern += "T ";
-      } else if ((row + col) % 5 === 0) {
-        pattern += "S ";
-      } else {
-        pattern += ". ";
+      let cellClass = "dot";
+      let symbol = ".";
+      const sum = row + col;
+
+      if (sum % 15 === 0) {
+        cellClass = "G";
+        symbol = "G";
+      } else if (sum % 3 === 0) {
+        cellClass = "T";
+        symbol = "T";
+      } else if (sum % 5 === 0) {
+        cellClass = "S";
+        symbol = "S";
       }
+
+      html += `<span class='${cellClass}'>${symbol}</span> `;
     }
 
-    pattern += "#\n"; // right border
+    html += "<span class='border'>#</span>\n";
   }
 
   // Bottom border
-  pattern += "#".repeat(n * 2 + 3);
+  html += "<span class='border'>" + "#".repeat(n * 2 + 3) + "</span>";
 
-  // Display the pattern
-  document.getElementById("result").textContent = pattern;
+  result.innerHTML = html;
 });

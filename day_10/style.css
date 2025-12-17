@@ -18,13 +18,20 @@ h1 {
   color: #d6336c;
 }
 
-label {
+.label-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 12px;
+  gap: 10px;
   font-weight: bold;
   color: #555;
+}
+
+.label-row span {
+  display: inline-block;
+  width: 80px;
+  text-align: left;
 }
 
 input {
@@ -32,6 +39,7 @@ input {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center;
 }
 
 button {

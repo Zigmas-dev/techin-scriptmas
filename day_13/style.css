@@ -27,6 +27,7 @@ label {
 
 input {
   width: 90%;
+  max-width: 300px;
   padding: 6px;
   margin-top: 5px;
   border: 1px solid #ccc;

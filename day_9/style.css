@@ -20,23 +20,30 @@ h1 {
   font-size: 1.8rem;
 }
 
-label {
+.label-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 12px;
+  gap: 1rem;
   font-weight: bold;
   color: #555;
+}
+
+.label-row span {
+  display: inline-block;
+  width: 180px;
+  text-align: left;
 }
 
 input {
   width: 100%;
   max-width: 100px;
   padding: 8px;
-  margin: 0;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
+  text-align: center;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }

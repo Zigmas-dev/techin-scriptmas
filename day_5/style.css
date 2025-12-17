@@ -1,86 +1,71 @@
-/* Background */
 body {
-  margin: 0;
-  background: #e8f3ff; /* švelni žiemiška mėlyna */
-  min-height: 100vh;
-  color: #2c3e50;
-  font-family: Arial, sans-serif; /* kaip tavo pavyzdyje */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #e8f3ff;
 }
 
-/* Main container */
 .container {
-  text-align: center;
   width: 90%;
   max-width: 350px;
-  padding: 20px;
+  margin: 30px auto;
+  padding: 15px;
   background: linear-gradient(145deg, #fffcf5, #ffe6e6);
   border-radius: 15px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
   transition: all 0.3s ease;
 }
 
-/* Title */
-.title {
+h1 {
   margin-bottom: 20px;
-  font-size: 1.8rem;
-  color: #d6336c; /* rožinė kaip tavo theme */
-  text-shadow: 0 0 10px rgba(214, 51, 108, 0.3);
+  color: #d6336c;
+  font-size: 1.5rem;
 }
 
-/* ASCII display */
-.ascii-box {
+button {
+  padding: 12px 24px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d6336c;
+}
+
+#ascii {
+  margin: 25px auto;
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 1px;
   white-space: pre;
-  margin: 25px auto;
-
-  color: #ff6b6b; /* matching rožinė */
-  text-shadow: 0 0 6px rgba(255, 107, 107, 0.4);
-
-  animation: fadeIn 0.8s ease;
+  font-weight: bold;
 }
 
-/* Message */
-.msg {
+#message {
   margin-top: 10px;
   font-size: 1.1rem;
-  color: #555; /* neutralus tonas kaip pavyzdyje */
+  color: #555;
   opacity: 0;
-  animation: fadePop 1s ease forwards;
 }
 
-/* Start button */
-.start-btn {
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 1rem;
-
-  background-color: #ff6b6b; /* raudona–rožinė */
-  color: white;
-
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.start-btn:hover {
-  background-color: #d6336c; /* tamsesnis hover */
-  transform: translateY(-2px);
-}
+/* ASCII number colors */
+.red { color: #ff6b6b; }
+.green { color: #2f9e44; }
+.blue { color: #228be6; }
+.gold { color: #f59f00; }
+.purple { color: #7950f2; }
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.92); }
-  to   { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes fadePop {
   from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  to { opacity: 1; transform: translateY(0); }
 }

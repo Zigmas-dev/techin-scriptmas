@@ -1,0 +1,23 @@
+Peter’s Christmas Shopping Dilemma
+Peter wants to buy one Christmas gift. He has three options:
+
+A book costing x euros
+A music CD costing y euros
+A USB memory stick costing z euros
+Peter will always buy the cheapest of the three items.
+
+Your task is to determine how much money Peter will spend.
+
+Input
+Three real numbers (decimals), each on the same line or separated by spaces:
+
+x – price of the book in euros
+y – price of the CD in euros
+z – price of the USB stick in euros
+Output
+Print one real number – the smallest of the three prices.
+
+You may:
+
+print it with two decimal places, e.g. 7.24
+optionally add text like Peter will spend 7.24.
