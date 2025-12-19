@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santa’s Toy Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎄 Santa’s Toy Collection 🎄</h1>
+
+    <div class="row-container">
+    <label class="label-row">
+      <span>Number of toys</span>
+      <input type="number" id="countInput" min="1" class="small-input" />
+    </label>
+
+    <label class="label-row">
+      <span>Toy numbers</span>
+      <input
+        type="text"
+        id="toysInput"
+        placeholder="Enter toy numbers with spaces"
+      />
+    </label>
+</div> 
+
+
+    <button id="checkBtn">Find Trade Toys</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
