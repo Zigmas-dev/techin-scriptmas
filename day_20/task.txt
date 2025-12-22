@@ -1,0 +1,64 @@
+Santa’s Christmas Call Center – Billing Task
+Every December, Santa runs a special North Pole Call Center where elves make phone calls to children around the world to confirm their Christmas wishes.
+
+At the end of the month, Santa must prepare a magical call bill for each elf.
+
+Your task is to help Santa calculate how much each elf must pay for their calls (in candy canes or Christmas coins).
+
+Task Description
+Santa has a list of elves. For each elf, you know:
+
+first name
+last name
+a list of calls they made (each call contains: cityName, minutesTalked)
+Santa also has a price list, where for every city you know the price per minute.
+
+Your program must:
+
+Calculate the total cost of calls for each elf.
+Sort all elves alphabetically by last name.
+Print the billing report, showing:
+elf’s first name
+elf’s last name
+total cost of calls (rounded to 2 decimals)
+Finally, print:
+the total money collected from all elves.
+Input (stored directly in code)
+Example data:
+const elves = [
+  {
+    firstName: "Jingle",
+    lastName: "Sparkfoot",
+    calls: [
+      { city: "London", minutes: 12 },
+      { city: "Paris", minutes: 7 }
+    ]
+  },
+  {
+    firstName: "Twinkle",
+    lastName: "Icicletoes",
+    calls: [
+      { city: "NewYork", minutes: 20 },
+      { city: "London", minutes: 5 }
+    ]
+  },
+  {
+    firstName: "Pudding",
+    lastName: "Gumdrops",
+    calls: [
+      { city: "Paris", minutes: 15 }
+    ]
+  }
+];
+
+const priceList = {
+  London: 0.50,
+  Paris: 0.40,
+  NewYork: 0.70
+};
+Output Example
+Gumdrops Pudding 6.00
+Icicletoes Twinkle 16.50
+Sparkfoot Jingle 9.50
+Total: 32.00
+(Names sorted alphabetically by last name.)

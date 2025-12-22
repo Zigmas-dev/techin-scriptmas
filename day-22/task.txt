@@ -1,0 +1,32 @@
+Christmas Tree
+Just before Christmas, George’s father brought a beautiful Christmas tree into the house. George wants to present his Christmas greetings in the shape of a “tree” — that is, the text must be rearranged into lines whose length (number of words) increases, and the lines are alternately shifted to the left and to the right so that only one character (one vertical axis) remains for the “trunk”, as shown in the examples.
+
+Rules for forming a “tree” from the text
+You are given n lines of text (sentences). Each line is processed separately:
+
+The line is split into words (spaces are used as separators). Punctuation marks that, according to writing rules, are attached to the end of a word (e.g. , . ! ? : ;) are considered part of the word.
+New lines are formed from the obtained words:
+the 1st new line contains 1 word,
+the 2nd contains 2 words,
+the 3rd contains 3 words, and so on;
+when there are not enough words left to form a full line (e.g., 5 words are needed but only 3 remain), the remaining words form the last (incomplete) line.
+The resulting rearranged lines are alternately “shifted”:
+
+the 1st rearranged line is printed left-aligned,
+the 2nd is right-aligned,
+the 3rd again left-aligned,
+the 4th right-aligned, and so on.
+The shifting is done by inserting spaces on the left so that at the position of the “tree trunk” (a common vertical alignment) only one character remains. In other words, there is one chosen column (axis) with respect to which the lines are aligned: left-aligned lines end at this axis, and right-aligned lines start at this axis.
+
+Note: the position of the axis (trunk) is chosen based on the maximum character length of all rearranged lines, so that everything fits neatly (as in the examples).
+
+Input Data
+The data is provided directly inside the program.
+
+Additional constraints:
+
+the rearranged text must contain no more than 100 lines in total;
+each original input line may contain up to 255 characters.
+Output
+The program must output the entire text in the shape of a “Christmas tree” to the screen. If necessary, the left side is padded with spaces.
+
